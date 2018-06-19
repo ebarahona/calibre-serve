@@ -6,7 +6,9 @@
   "bin": "cli.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node cli.js"
+    "start": "node cli.js",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "author": "Jad <jad@sarout.com>",
   "license": "MIT",
@@ -19,8 +21,9 @@
     "opds": "^2.0.0",
     "serve-favicon": "^2.3.0",
     "session-file-store": "^0.2.0",
-    "sqlite3": "^3.1.4",
-    "squel": "^5.3.2"
+    "sqlite3": "^4.0.0",
+    "squel": "^5.3.2",
+    "snyk": "^1.83.0"
   },
   "devDependencies": {},
   "repository": {
@@ -36,5 +39,6 @@
   "bugs": {
     "url": "https://github.com/Xananax/calibre-serve/issues"
   },
-  "homepage": "https://github.com/Xananax/calibre-serve#readme"
+  "homepage": "https://github.com/Xananax/calibre-serve#readme",
+  "snyk": true
 }
